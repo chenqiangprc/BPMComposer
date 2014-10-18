@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="11.1.1.7.0.0.8" build="0.8" fullName="Module.WriteStatusReport" modifiers="0"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<definitions targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/Module/WriteStatusReport.Interface" name="WriteStatusReport" xmlns:oj="http://xmlns.oracle.com/bpm/bpmobject/Module/WriteStatusReport"  xmlns:tns="http://xmlns.oracle.com/bpm/bpmobject/Module/WriteStatusReport.Interface"  xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns="http://schemas.xmlsoap.org/wsdl/"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
+    <xsd:annotation>
+        <xsd:documentation>
+            <bpmo:documentable>
+                <bpmo:description>
+                    This takes the status report
+                </bpmo:description>
+            </bpmo:documentable>
+        </xsd:documentation>
+    </xsd:annotation>
+    <types>
+        <xsd:schema>
+            <xsd:import namespace="http://xmlns.oracle.com/bpm/bpmobject/Module/WriteStatusReport" schemaLocation="WriteStatusReport.xsd"/>
+        </xsd:schema>
+        <xsd:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/Module/WriteStatusReport.Interface" xmlns:oj="http://xmlns.oracle.com/bpm/bpmobject/Module/WriteStatusReport"  xmlns="http://xmlns.oracle.com/bpm/bpmobject/Module/WriteStatusReport.Interface"  xmlns:ns1="http://xmlns.oracle.com/pcbpel/adapter/db/top/WriteStatusReport" >
+            <xsd:import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/WriteStatusReport" schemaLocation="../../xsd/WriteStatusReport_table.xsd"/>
+            <xsd:element name="insert">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element ref="ns1:JcStatusReportCollection" bpmo:name="jcStatusReportCollection"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </types>
+    <message name="insert">
+        <part name="parameters" element="tns:insert"/>
+    </message>
+    <portType name="WriteStatusReportPortType">
+        <operation name="insert">
+            <input name="insert" message="tns:insert"/>
+        </operation>
+    </portType>
+    <binding name="WriteStatusReportPortTypeBinding" type="tns:WriteStatusReportPortType">
+        <bpmo:binding element="oj:WriteStatusReport">
+            <bpmo:properties>
+                <bpmo:property key="interface.object" value="service.object"/>
+                <bpmo:property key="service.object.id" value="S|http://xmlns.oracle.com/pcbpel/adapter/db/BPMComposer/Project1/WriteStatusReport|WriteStatusReport_ptt|WriteStatusReport"/>
+                <bpmo:property key="target" value="WriteStatusReport"/>
+            </bpmo:properties>
+        </bpmo:binding>
+        <operation name="insert">
+            <bpmo:delegate methodSignature="insert" delegatedNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/BPMComposer/Project1/WriteStatusReport" delegatedPortType="WriteStatusReport_ptt"/>
+            <input name="insert"/>
+        </operation>
+    </binding>
+</definitions>

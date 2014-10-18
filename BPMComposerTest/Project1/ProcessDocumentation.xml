@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.0.8" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="Process">
+        <topicDocumentations>
+            <topicDocumentation name="Process">
+                <descriptions>
+                    <description locale="en">Process</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT11200053809768">
+                <labels>
+                    <label locale="en">ServiceTask</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT11200043625790">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT11200043625788">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf5"/>
+            <topicDocumentation name="sf7"/>
+        </topicDocumentations>
+    </component>
+</processDocumentation>

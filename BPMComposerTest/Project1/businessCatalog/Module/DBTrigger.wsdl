@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="11.1.1.7.0.0.8" build="0.8" fullName="Module.DBTrigger" modifiers="0"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<definitions targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/Module/DBTrigger.Interface" name="DBTrigger" xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns="http://schemas.xmlsoap.org/wsdl/"  xmlns:oj="http://xmlns.oracle.com/bpm/bpmobject/Module/DBTrigger"  xmlns:tns="http://xmlns.oracle.com/bpm/bpmobject/Module/DBTrigger.Interface"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
+    <xsd:annotation>
+        <xsd:documentation>
+            <bpmo:documentable>
+                <bpmo:description>
+                    This maps to the source table
+                </bpmo:description>
+            </bpmo:documentable>
+        </xsd:documentation>
+    </xsd:annotation>
+    <types>
+        <xsd:schema>
+            <xsd:import namespace="http://xmlns.oracle.com/bpm/bpmobject/Module/DBTrigger" schemaLocation="DBTrigger.xsd"/>
+        </xsd:schema>
+        <xsd:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/Module/DBTrigger.Interface" xmlns:ns1="http://xmlns.oracle.com/pcbpel/adapter/db/top/DBTrigger"  xmlns:oj="http://xmlns.oracle.com/bpm/bpmobject/Module/DBTrigger"  xmlns="http://xmlns.oracle.com/bpm/bpmobject/Module/DBTrigger.Interface" >
+            <xsd:import namespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/DBTrigger" schemaLocation="../../xsd/DBTrigger_table.xsd"/>
+            <xsd:element name="receive">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element ref="ns1:JcTriggerCollection" bpmo:name="jcTriggerCollection"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </types>
+    <message name="receive">
+        <part name="parameters" element="tns:receive"/>
+    </message>
+    <portType name="DBTriggerPortType">
+        <operation name="receive">
+            <xsd:annotation>
+                <xsd:documentation>
+                    <bpmo:documentable>
+                        <bpmo:argumentDoc name="jcTriggerCollection">
+                            It maps to the rows added into the table.
+                        </bpmo:argumentDoc>
+                    </bpmo:documentable>
+                </xsd:documentation>
+            </xsd:annotation>
+            <input name="receive" message="tns:receive"/>
+        </operation>
+    </portType>
+    <binding name="DBTriggerPortTypeBinding" type="tns:DBTriggerPortType">
+        <bpmo:binding element="oj:DBTrigger">
+            <bpmo:properties>
+                <bpmo:property key="interface.object" value="reference.object"/>
+                <bpmo:property key="service.object.id" value="S|http://xmlns.oracle.com/pcbpel/adapter/db/BPMComposer/Project1/DBTrigger|DBTrigger_ptt|DBTrigger"/>
+                <bpmo:property key="target" value="DBTrigger"/>
+            </bpmo:properties>
+        </bpmo:binding>
+        <operation name="receive">
+            <bpmo:delegate methodSignature="receive" delegatedNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/BPMComposer/Project1/DBTrigger" delegatedPortType="DBTrigger_ptt"/>
+            <input name="receive"/>
+        </operation>
+    </binding>
+</definitions>

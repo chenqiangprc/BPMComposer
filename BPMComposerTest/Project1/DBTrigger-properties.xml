@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="JC_TRIGGER.ID:db_column_not_null">false</entry>
+   <entry key="JC_TRIGGER.VALUE:db_column_size">1000</entry>
+   <entry key="JC_TRIGGER.STATUS:db_column_type">CHAR</entry>
+   <entry key="JC_TRIGGER.STATUS:db_column_not_null">false</entry>
+   <entry key="JC_TRIGGER.ID:db_column_type">NUMBER</entry>
+   <entry key="JC_TRIGGER:db_column_2">STATUS</entry>
+   <entry key="JC_TRIGGER.VALUE:db_column_not_null">false</entry>
+   <entry key="JC_TRIGGER:db_column_1">VALUE</entry>
+   <entry key="JC_TRIGGER:db_table_type">TABLE</entry>
+   <entry key="JC_TRIGGER:db_column_0">ID</entry>
+   <entry key="return_single_result_set">false</entry>
+   <entry key="JC_TRIGGER.STATUS:db_column_size">1</entry>
+   <entry key="root_descriptor_alias">JC_TRIGGER</entry>
+   <entry key="JC_TRIGGER.VALUE:db_column_type">VARCHAR2</entry>
+   <entry key="JC_TRIGGER.ID:db_column_precision">0</entry>
+</properties>

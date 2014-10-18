@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+   <entry key="JC_STATUS_REPORT:db_column_1">COPIED_VALUES</entry>
+   <entry key="JC_STATUS_REPORT:db_table_type">TABLE</entry>
+   <entry key="JC_STATUS_REPORT:db_column_0">ID</entry>
+   <entry key="JC_STATUS_REPORT.COPIED_VALUES:db_column_size">1000</entry>
+   <entry key="JC_STATUS_REPORT.ID:db_column_type">NUMBER</entry>
+   <entry key="JC_STATUS_REPORT.ID:db_column_precision">0</entry>
+   <entry key="root_descriptor_alias">JC_STATUS_REPORT</entry>
+   <entry key="JC_STATUS_REPORT.ID:db_column_not_null">false</entry>
+   <entry key="JC_STATUS_REPORT.COPIED_VALUES:db_column_not_null">false</entry>
+   <entry key="JC_STATUS_REPORT.COPIED_VALUES:db_column_type">VARCHAR2</entry>
+</properties>

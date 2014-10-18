@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.oracle.com/pcbpel/adapter/db/top/DBTrigger" xmlns="http://xmlns.oracle.com/pcbpel/adapter/db/top/DBTrigger" elementFormDefault="qualified" attributeFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <xs:element name="JcTriggerCollection" type="JcTriggerCollection"/>
+   <xs:complexType name="JcTriggerCollection">
+      <xs:sequence>
+         <xs:element name="JcTrigger" type="JcTrigger" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+   </xs:complexType>
+   <xs:complexType name="JcTrigger">
+      <xs:sequence>
+         <xs:element name="id" type="xs:decimal" nillable="true"/>
+         <xs:element name="value" type="xs:string" minOccurs="0" nillable="true"/>
+         <xs:element name="status" minOccurs="0" nillable="true">
+            <xs:simpleType>
+               <xs:restriction base="xs:string">
+                  <xs:maxLength value="1"/>
+               </xs:restriction>
+            </xs:simpleType>
+         </xs:element>
+      </xs:sequence>
+   </xs:complexType>
+</xs:schema>
